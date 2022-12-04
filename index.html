@@ -11,7 +11,36 @@
 </head>
 
 <body>
-    <div>Tic Tac Toe</div>
+    <div class="header">
+        <div class="header-title">Tic Tac Toe</div>
+        <div class="header-score">
+            <div class="x-score-container">
+                <label for="x-score">X</label>
+                <div id="x-score"></div>
+            </div>
+            <div class="o-score-container">
+                <label for="o-score">O</label>
+                <div id="o-score"></div>
+            </div>
+        </div>
+    </div>
+    <div class="game-grid-wrapper">
+        <div id="board" class="game-grid">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+    </div>
+    <div id="winningMessage" class="winning-message">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Play Again?</button>
+    </div>
 </body>
 
 </html>
